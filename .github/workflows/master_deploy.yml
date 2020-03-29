@@ -25,7 +25,7 @@ jobs:
       run: yarn build
     - name: Deploy to GH Pages
       run: |
-        git remote set-url origin c2310f92780319ebc9041ca75296311c2a6efa66@github.com/3d-Mask-Makers/3dmaskmakers.git
+        git remote set-url origin 8e7f329ee5ff0901dc3d352e7d35a15827bfd1c4@github.com/3d-Mask-Makers/3dmaskmakers.git
         npm run deploy
     - name: Updating Domain
       run: echo "Update domain"
