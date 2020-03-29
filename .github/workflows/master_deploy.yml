@@ -15,8 +15,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Git Configurations
+    - name: Git Configure email
       run: git config --global user.email "3dmaskmakers@gmail.com"
+    - name: Git Configure name
       run: git config --global user.name "3dMaskMakers"
     - name: Install Packages
       run: yarn install
