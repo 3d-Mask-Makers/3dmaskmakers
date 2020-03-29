@@ -24,6 +24,8 @@ jobs:
     - name: Building the application
       run: yarn build
     - name: Deploy to GH Pages
-      run: yarn deploy
+      run: |
+        git remote set-url origin c2310f92780319ebc9041ca75296311c2a6efa66@github.com/3dmaskmakers/3dmaskmakers>.git
+        npm run deploy
     - name: Updating Domain
       run: echo "Update domain"
